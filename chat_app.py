@@ -69,6 +69,8 @@ def generate_response(user_message):
 
     elif "streamlit" in message:
         return "Streamlit helps build web apps easily using Python."
+    elif "thank" in message:
+        return "Welcome!"
 
     else:
         return random.choice(default_responses)
